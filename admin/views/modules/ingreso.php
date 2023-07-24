@@ -2,7 +2,7 @@
 
   <div class="login-logo">
 
-    <a href="#"><b>Hotel Zone</b></a>
+    <a href="#"><b>Hotel Byte</b></a>
 
   </div>
   <!-- /.login-logo -->

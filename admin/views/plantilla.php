@@ -31,8 +31,8 @@
   <link rel="stylesheet" href="views/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="views/bower_components/bootstrap-daterangepicker/daterangepicker.css">
-
-  
+  <!-- Stylos Texarea SLider -->
+  <link rel="stylesheet" href="views/css/styles.css">
  
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,7 +60,7 @@
 
       if(isset($_GET["url"])){
 
-        if($_GET["url"] == "inicio" || $_GET["url"] == "ingreso" || $_GET["url"] == "usuarios" || $_GET["url"] == "salir" || $_GET["url"] == "perfil"){
+        if($_GET["url"] == "inicio" || $_GET["url"] == "ingreso" || $_GET["url"] == "usuarios" || $_GET["url"] == "salir" || $_GET["url"] == "perfil" || $_GET["url"] == "slide"){
 
           include "modules/".$_GET["url"].".php";
 

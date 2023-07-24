@@ -12,7 +12,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="slide">
           <i class="fa fa-home"></i>
           <span>Slide</span>
         </a>

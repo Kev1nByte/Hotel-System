@@ -16,7 +16,9 @@ class UsuariosControlador{
 
 				$respuesta = UsuariosModelo::IngresoUsuariosModelo($datosC, $tablaBD);
 
-				if($respuesta["usuario"] == $_POST["usuario-Ing"] && $respuesta["clave"] == $_POST["clave-Ing"]){
+				// if($respuesta["usuario"] == $_POST["usuario-Ing"] && $respuesta["clave"] == $_POST["clave-Ing"]){
+				if (is_array($respuesta) && $respuesta["usuario"] == $_POST["usuario-Ing"] && $respuesta["clave"] == $_POST["clave-Ing"]) {
+
 
 					$_SESSION["Ingreso"] = true;
 
