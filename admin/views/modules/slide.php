@@ -112,7 +112,7 @@
               
               <h2>Orden:</h2>
 
-              <input type="password" class="form-control input-lg" name="ordenN">
+              <input type="text" class="form-control input-lg" name="ordenN">
 
             </div>
 
@@ -141,8 +141,8 @@
 
           <?php
 
-          // $crearU = new UsuariosC();
-          // $crearU -> CrearUsuariosC();
+          $crearSlide = new SlideControlador();
+          $crearSlide -> CrearSlideControlador();
 
           ?>
 
