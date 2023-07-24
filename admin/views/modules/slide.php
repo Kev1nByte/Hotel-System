@@ -38,7 +38,7 @@
 
             <tbody>
 
-              <tr>
+              <!-- <tr>
                 <td>1</td>
                 <td><img src="views/img/default.png" class="img-thumbnail" width="300px"></td>
                 <td>ENJOY THE GREATEST PLEASURE IN OUR HOTEL</td>
@@ -55,7 +55,43 @@
                   </div>
                 </td>
 
-              </tr>
+              </tr> -->
+
+              <?php
+
+              $item = null;
+              $valor = null;
+
+              $verS = SlideControlador::VerSlideControlador($item, $valor);
+
+              foreach ($verS as $key => $value) {
+                
+                echo '<tr>
+                      <td>'.($key+1).'</td>
+
+                      <td><img src="'.$value["imagen"].'" class="img-thumbnail" width="300px"></td>
+
+                      <td>'.$value["titular"].'</td>
+
+                      <td>'.$value["descripcion"].'</td>
+
+                      <td><h1>'.$value["orden"].'</h1></td>
+
+                      <td>
+                        <div class="btn-group">
+                          
+                          <button class="btn btn-success" data-toggle="modal" data-target="#EditarS"><i class="fa fa-pencil"></i></button>
+
+                          <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+                        </div>
+                      </td>
+
+                    </tr>';
+
+              }
+
+              ?>
 
             </tbody>
 

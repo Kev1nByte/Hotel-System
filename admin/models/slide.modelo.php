@@ -27,6 +27,34 @@ class SlideModelo extends ConexionBD{
 
 	}
 
+    //Ver Slide
+
+	static public function VerSlideModelo($tableBD, $item, $valor){
+
+		if($item != null){
+
+			$pdo = ConexionBD::cBD()->prepare("SELECT * FROM $tableBD WHERE $item = :$item");
+
+			$pdo -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+
+			$pdo -> execute();
+
+			return $pdo -> fetch();
+
+		}else{
+
+			$pdo = ConexionBD::cBD()->prepare("SELECT * FROM $tableBD ORDER BY orden ASC");
+
+			$pdo -> execute();
+
+			return $pdo -> fetchAll();
+
+		}
+
+		$pdo -> close();
+
+	}
+
 }
 
 ?>

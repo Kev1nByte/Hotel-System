@@ -59,6 +59,19 @@ class SlideControlador{
 
 	}
 
+    
+	//VER SLIDE
+
+	static public function VerSlideControlador($item, $valor){
+
+		$tableBD = "slide";
+
+		$respuesta = SlideModelo::VerSlideModelo($tableBD, $item, $valor);
+
+		return $respuesta;
+
+	}
+
 }
 
 ?>
