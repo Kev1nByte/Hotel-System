@@ -110,6 +110,72 @@ class NosotrosControlador{
 
 	}
 
+    //Actualizar Controlador
+
+	public function ActualizarNosotrosControlador(){
+
+		if(isset($_POST["tituloE"])){
+
+			$rutaImg = $_POST["imagenActual"];
+
+			if(isset($_FILES["imagenE"]["tmp_name"]) && !empty($_FILES["imagenE"]["tmp_name"])){
+
+				if(!empty($_POST["imagenActual"])){
+
+					unlink($_POST["imagenActual"]);
+
+				}else{
+
+					mkdir($direc, 0755);
+
+				}
+
+
+				if($_FILES["imagenE"]["type"] == "image/jpeg"){
+
+					$nombre = mt_rand(10, 999);
+
+					$rutaImg = "views/img/nosotros/N".$nombre.".jpg";
+
+					$imagen = imagecreatefromjpeg($_FILES["imagenE"]["tmp_name"]);
+
+					imagejpeg($imagen, $rutaImg);
+
+				}
+
+				if($_FILES["imagenE"]["type"] == "image/png"){
+
+					$nombre = mt_rand(10, 999);
+
+					$rutaImg = "views/img/nosotros/N".$nombre.".png";
+
+					$imagen = imagecreatefrompng($_FILES["imagenE"]["tmp_name"]);
+
+					imagepng($imagen, $rutaImg);
+
+				}
+
+			}
+
+
+			$tablaBD = "nosotros";
+
+			$datosC = array("id"=>$_POST["Nid"], "titulo"=>$_POST["tituloE"], "introduccion"=>$_POST["introduccionE"], "descripcion"=>$_POST["descripcionE"], "imagen"=>$rutaImg);
+
+			$respuesta = NosotrosModelo::ActualizarNosotrosModelo($tablaBD, $datosC);
+
+			if($respuesta == true){
+
+				echo '<script>
+					window.location = "nosotros";
+					</script>';
+
+			}
+
+		}
+
+	}
+
 }
 
 ?>

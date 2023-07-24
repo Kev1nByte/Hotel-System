@@ -60,4 +60,11 @@
 
 </div>
 
+<?php
+
+$actualizarNosotros = new NosotrosControlador();
+$actualizarNosotros -> ActualizarNosotrosControlador();
+
+?>
+
 

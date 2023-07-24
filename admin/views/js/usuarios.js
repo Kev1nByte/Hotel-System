@@ -55,3 +55,11 @@ $(".TB").on("click", ".EditarU", function(){
 	})
 
 })
+
+// Quitar espacio TextArea
+
+$('textarea').each(function(){
+
+	$(this).val($(this).val().trim());
+
+})
