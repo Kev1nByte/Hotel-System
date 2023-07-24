@@ -72,6 +72,76 @@ class SlideControlador{
 
 	}
 
+    //Actualizar Slide
+
+	public function ActualizarSlideControlador(){
+
+		if(isset($_POST["Sid"])){
+
+			$rutaImg = $_POST["imagenActual"];
+
+			if(isset($_FILES["imagenE"]["tmp_name"]) && !empty($_FILES["imagenE"]["tmp_name"])){
+
+				if(!empty($_POST["imagenActual"])){
+
+					unlink($_POST["imagenActual"]);
+
+				}else{
+
+					mkdir($direc, 0755);
+
+				}
+
+
+				if($_FILES["imagenE"]["type"] == "image/jpeg"){
+
+					$nombre = mt_rand(10,999);
+
+					$rutaImg = "views/img/slide/S".$nombre.".jpg";
+
+					$imagen = imagecreatefromjpeg($_FILES["imagenE"]["tmp_name"]);
+
+					imagejpeg($imagen, $rutaImg);
+
+				}
+
+				if($_FILES["imagenE"]["type"] == "image/png"){
+
+					$nombre = mt_rand(10,999);
+
+					$rutaImg = "views/img/slide/S".$nombre.".png";
+
+					$imagen = imagecreatefrompng($_FILES["imagenE"]["tmp_name"]);
+
+					imagepng($imagen, $rutaImg);
+					
+				}
+
+			}
+
+            
+			$tableBD = "slide";
+
+			$datosC = array("id"=>$_POST["Sid"], "titular"=>$_POST["titularE"], "descripcion"=>$_POST["descripcionE"], "orden"=>$_POST["ordenE"], "imagen"=>$rutaImg);
+
+			$respuesta = SlideModelo::ActualizarSlideModelo($tableBD, $datosC);
+
+			if($respuesta == true){
+
+				echo '<script>
+						window.location = "slide";
+					</script>';
+
+			}else{
+
+				echo "ERROR AL ACTUALIZAR SLIDE";
+
+			}
+
+		}
+
+	}
+
 }
 
 ?>

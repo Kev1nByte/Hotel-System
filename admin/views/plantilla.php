@@ -119,6 +119,7 @@
 <script src="views/dist/js/demo.js"></script>
 
 <script src="views/js/usuarios.js"></script>
+<script src="views/js/slide.js"></script>
 
 </body>
 </html>

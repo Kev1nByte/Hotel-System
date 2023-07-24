@@ -55,6 +55,33 @@ class SlideModelo extends ConexionBD{
 
 	}
 
+    //Actualizar Slide
+
+	static public function ActualizarSlideModelo($tableBD, $datosC){
+
+		$pdo = ConexionBD::cBD()->prepare("UPDATE $tableBD SET titular = :titular, descripcion 
+			= :descripcion, orden = :orden, imagen = :imagen WHERE id = :id");
+
+		$pdo -> bindParam(":id", $datosC["id"], PDO::PARAM_INT);
+		$pdo -> bindParam(":titular", $datosC["titular"], PDO::PARAM_STR);
+		$pdo -> bindParam(":descripcion", $datosC["descripcion"], PDO::PARAM_STR);
+		$pdo -> bindParam(":orden", $datosC["orden"], PDO::PARAM_STR);
+		$pdo -> bindParam(":imagen", $datosC["imagen"], PDO::PARAM_STR);
+
+		if($pdo -> execute()){
+
+			return true;
+
+		}else{
+
+			return false;
+
+		}
+
+		$pdo -> close();
+
+	}
+
 }
 
 ?>

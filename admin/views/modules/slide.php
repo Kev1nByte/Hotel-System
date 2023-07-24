@@ -38,7 +38,7 @@
 
             <tbody>
 
-              <!-- <tr>
+             <!--  <tr>
                 <td>1</td>
                 <td><img src="views/img/default.png" class="img-thumbnail" width="300px"></td>
                 <td>ENJOY THE GREATEST PLEASURE IN OUR HOTEL</td>
@@ -80,7 +80,7 @@
                       <td>
                         <div class="btn-group">
                           
-                          <button class="btn btn-success" data-toggle="modal" data-target="#EditarS"><i class="fa fa-pencil"></i></button>
+                          <button class="btn btn-success EditarSlide" Sid="'.$value["id"].'" data-toggle="modal" data-target="#EditarS"><i class="fa fa-pencil"></i></button>
 
                           <button class="btn btn-danger"><i class="fa fa-times"></i></button>
 
@@ -110,7 +110,7 @@
 
 
 
-  <!-- Crear Usuarios -->
+  <!-- Crear Slide -->
   <div class="modal fade" role="dialog" id="CrearSlide">
     
     <div class="modal-dialog">
@@ -191,15 +191,6 @@
   </div>
 
 
-
-<?php
-
-$borrarUsuario = new UsuariosControlador();
-$borrarUsuario -> BorrarUsuariosControlador();
-
-?>
-
-
 <div class="modal fade" role="dialog" id="EditarS">
     
     <div class="modal-dialog">
@@ -250,7 +241,7 @@ $borrarUsuario -> BorrarUsuariosControlador();
 
               <p class="help-block">peso máximo permitido 200 MB</p>
 
-              <img src="views/img/default.png" class="img-thumbnail visor" width="100px;"> 
+              <img src="views/img/default.png" class="img-thumbnail visor" width="300px;"> 
 
               <input type="hidden" name="imagenActual" id="imagenActual">
 
@@ -271,8 +262,8 @@ $borrarUsuario -> BorrarUsuariosControlador();
 
           <?php
 
-          $actualizarUsuario = new UsuariosControlador();
-          $actualizarUsuario -> ActualizarUsuariosControlador();
+          $actualizarSlide = new SlideControlador();
+          $actualizarSlide -> ActualizarSlideControlador();
 
           ?>
 
