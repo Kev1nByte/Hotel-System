@@ -82,7 +82,7 @@
                           
                           <button class="btn btn-success EditarSlide" Sid="'.$value["id"].'" data-toggle="modal" data-target="#EditarS"><i class="fa fa-pencil"></i></button>
 
-                          <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                          <button class="btn btn-danger BorrarSlide" Sid="'.$value["id"].'" imagenSlide="'.$value["imagen"].'"><i class="fa fa-times"></i></button>
 
                         </div>
                       </td>
@@ -267,10 +267,17 @@
 
           ?>
 
-        </form>
-
-      </div>
+      </form>
 
     </div>
 
   </div>
+
+</div>
+
+<?php
+
+$borrarSlide = new SlideControlador();
+$borrarSlide -> BorrarSlideControlador();
+
+?>

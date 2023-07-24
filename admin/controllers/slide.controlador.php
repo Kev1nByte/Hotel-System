@@ -119,7 +119,7 @@ class SlideControlador{
 
 			}
 
-            
+
 			$tableBD = "slide";
 
 			$datosC = array("id"=>$_POST["Sid"], "titular"=>$_POST["titularE"], "descripcion"=>$_POST["descripcionE"], "orden"=>$_POST["ordenE"], "imagen"=>$rutaImg);
@@ -135,6 +135,39 @@ class SlideControlador{
 			}else{
 
 				echo "ERROR AL ACTUALIZAR SLIDE";
+
+			}
+
+		}
+
+	}
+
+    //Borrar slide
+
+	public function BorrarSlideControlador(){
+
+		if(isset($_GET["Sid"])){
+
+			$tableBD = "slide";
+			$id = $_GET["Sid"];
+
+			if($_GET["imagenSlide"] != ""){
+
+				unlink($_GET["imagenSlide"]);
+
+			}
+
+			$respuesta = SlideModelo::BorrarSlideModelo($tableBD, $id);
+
+			if($respuesta == true){
+
+				echo '<script>
+						window.location = "slide";
+					</script>';
+
+			}else{
+
+				echo "ERROR AL BORRAR SLIDE";
 
 			}
 
