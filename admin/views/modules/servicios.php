@@ -11,93 +11,36 @@
 			
 			<div class="box-body">
 				
-				<div class="row TB">
+                <div class="row TB">
 
-					<div class="col-md-4 col-sm-6">
-						
-						<a href="#" data-toggle="modal" data-target="#EditarServicio">
-							
-							<i class="fa fa-home" style="font-size: 25px;"></i>
+                    <?php
 
-							<h4>Título</h4>
+                    $item = null;
+                    $valor = null;
 
-							<p>Descripción</p>
+                    $servicios = ServiciosControlador::MostrarServiciosControlador($item, $valor);
 
-						</a>
+                    foreach ($servicios as $key => $value) {
+                        
+                        echo '<div class="col-md-4 col-sm-6">
+                        
+                                <a href="#" data-toggle="modal" data-target="#EditarServicio">
+                                    
+                                    <i class="fa fa-'.$value["icono"].'" style="font-size: 25px;"></i>
 
-					</div>
+                                    <h4>'.$value["titulo"].'</h4>
 
-                    <div class="col-md-4 col-sm-6">
-						
-						<a href="#" data-toggle="modal" data-target="#EditarServicio">
-							
-							<i class="fa fa-home" style="font-size: 25px;"></i>
+                                    <p>'.$value["descripcion"].'</p>
 
-							<h4>Título</h4>
+                                </a>
 
-							<p>Descripción</p>
+                            </div>';
 
-						</a>
+                    }
 
-					</div>
+                    ?>
 
-                    <div class="col-md-4 col-sm-6">
-						
-						<a href="#" data-toggle="modal" data-target="#EditarServicio">
-							
-							<i class="fa fa-home" style="font-size: 25px;"></i>
-
-							<h4>Título</h4>
-
-							<p>Descripción</p>
-
-						</a>
-
-					</div>
-                    
-                    <div class="col-md-4 col-sm-6">
-						
-						<a href="#" data-toggle="modal" data-target="#EditarServicio">
-							
-							<i class="fa fa-home" style="font-size: 25px;"></i>
-
-							<h4>Título</h4>
-
-							<p>Descripción</p>
-
-						</a>
-
-					</div>
-
-                    <div class="col-md-4 col-sm-6">
-						
-						<a href="#" data-toggle="modal" data-target="#EditarServicio">
-							
-							<i class="fa fa-home" style="font-size: 25px;"></i>
-
-							<h4>Título</h4>
-
-							<p>Descripción</p>
-
-						</a>
-
-					</div>
-
-                    <div class="col-md-4 col-sm-6">
-						
-						<a href="#" data-toggle="modal" data-target="#EditarServicio">
-							
-							<i class="fa fa-home" style="font-size: 25px;"></i>
-
-							<h4>Título</h4>
-
-							<p>Descripción</p>
-
-						</a>
-
-					</div>
-					
-				</div>
+                </div>
 
 			</div>
 
