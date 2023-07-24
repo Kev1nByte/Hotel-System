@@ -19,7 +19,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="nosotros">
           <i class="fa fa-home"></i>
           <span>Nosotros</span>
         </a>
