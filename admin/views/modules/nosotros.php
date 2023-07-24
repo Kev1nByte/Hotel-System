@@ -29,9 +29,9 @@
 
         </div>
 
-      </div>
+    </div>
 
-    </section>
+  </section>
     <!-- /.content -->
 </div>
 
@@ -39,63 +39,25 @@
 
 <div id="EditarNosotros" class="modal fade" role="dialog">
     
-    <div class="modal-dialog">
+  <div class="modal-dialog">
+    
+    <div class="modal-content">
       
-      <div class="modal-content">
+      <form role="form" method="post" enctype="multipart/form-data">
         
-        <form role="form" method="post" enctype="multipart/form-data">
-          
-          <div class="modal-body">
-            
-            <div class="box-body">
-              
-              <div class="form-group">
-                
-                <h2>Título:</h2>
-                <input type="text" class="form-control input-lg" name="tituloE" required="">
+        <?php
 
-              </div>
+        $editarNosotros = new NosotrosControlador();
+        $editarNosotros -> EditarNosotrosControlador();
 
-               <div class="form-group">
-                
-                <h2>Introducción:</h2>
-                <textarea class="form-control" name="introduccionE" required></textarea>
-
-              </div>
-
-               <div class="form-group">
-                
-                <h2>Descripción:</h2>
-                <textarea class="form-control" name="descripcionE" required></textarea>
-
-              </div>
-
-              <div class="form-group">
-                
-                <h2>Imagen:</h2>
-
-                <input type="file" name="ImagenE">
-
-                <img src="views/img/default.png" class="img-thumbnail visor" width="270px">
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="modal-footer">
-            
-            <button class="btn btn-success" type="submit">Guardar</button>
-
-            <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-
-          </div>
-
-        </form>
-
-      </div>
+        ?>
+        
+      </form>
 
     </div>
 
   </div>
+
+</div>
+
+
