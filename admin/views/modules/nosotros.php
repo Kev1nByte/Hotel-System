@@ -1,11 +1,10 @@
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
 
+    <section class="content-header">
       <h1>
         Gestor de Sobre Nosotros
       </h1>
-     
+    
     </section>
 
     <!-- Main content -->
@@ -14,23 +13,14 @@
       <div class="box box-success">
         
         <div class="box-body">
+
+          <?php
+
+          $verNosotros = new NosotrosControlador();
+          $verNosotros -> VerNosotrosControlador();
+
+          ?>
           
-          <h2>Título:</h2>
-          <h4>Welcome To Our Hotel</h4>
-          <hr>
-
-          <h2>Introducción:</h2>
-          <h4>Donec In Nisi Non Ipsum Luctus Interdi Est. Cras Ipsum Augue, Facilisis Non Estut, Bibendum Finibus.</h4>
-          <hr>
-
-          <h2>Descripción:</h2>
-          <h4>Phasellus sed semper dolor, sed sodales erat. Donec at mi nunc. Suspendisse dictum lorem nec velit scelerisque, ac egestas sem tempor. Integer at facilisis enim. Vestibulum tristique consequat finibus. Donec ut elementum lorem, id dignissim neque. Curabitur commodo, odio sit amet vestibulum pretium, urna quam tincidunt elit, a tempus ex urna sit amet tortor.</h4>
-          <hr>
-
-          <h2>Imagen:</h2>
-          <img src="views/img/default.png" class="img-thumbnail" width="250px;">
-
-
         </div>
 
         <div class="box-footer">
@@ -42,7 +32,7 @@
       </div>
 
     </section>
-
+    <!-- /.content -->
 </div>
 
 <!-- Editar Nosotros -->
@@ -82,9 +72,9 @@
 
               <div class="form-group">
                 
-                <h2>Foto:</h2>
+                <h2>Imagen:</h2>
 
-                <input type="file" name="fotoE">
+                <input type="file" name="ImagenE">
 
                 <img src="views/img/default.png" class="img-thumbnail visor" width="270px">
 
