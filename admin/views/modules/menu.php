@@ -13,28 +13,28 @@
 
       <li>
         <a href="slide">
-          <i class="fa fa-home"></i>
+          <i class="fa fa-share-square-o"></i>
           <span>Slide</span>
         </a>
       </li>
 
       <li>
         <a href="nosotros">
-          <i class="fa fa-home"></i>
+          <i class="fa  fa-slideshare"></i>
           <span>Nosotros</span>
         </a>
       </li>
 
       <li>
         <a href="#">
-          <i class="fa fa-home"></i>
+          <i class="fa fa-info-circle"></i>
           <span>Servicios</span>
         </a>
       </li>
 
       <li>
         <a href="#">
-          <i class="fa fa-home"></i>
+          <i class="fa  fa-file-photo-o "></i>
           <span>Galería</span>
         </a>
       </li>
@@ -42,7 +42,7 @@
       <li class="treeview">
 
         <a href="#">
-          <i class="fa fa-list-ul"></i>
+          <i class="fa fa-building-o"></i>
           <span>Habitaciones</span>
 
           <span class="pull-right-container">
@@ -54,28 +54,28 @@
           
           <li>
            <a href="#">
-            <i></i>
+            <i class="fa  fa-circle-o"></i>
              <span>Simple</span>
            </a> 
           </li>
 
           <li>
            <a href="#">
-            <i></i>
+           <i class="fa  fa-circle-o"></i>
              <span>Doble</span>
            </a> 
           </li>
 
           <li>
            <a href="#">
-            <i></i>
+           <i class="fa  fa-circle-o"></i>
              <span>Triple</span>
            </a> 
           </li>
 
           <li>
            <a href="#">
-            <i></i>
+           <i class="fa  fa-circle-o"></i>
              <span>Suit</span>
            </a> 
           </li>
@@ -86,21 +86,21 @@
 
       <li>
         <a href="#">
-          <i class="fa fa-home"></i>
+          <i class="fa fa-envelope"></i>
           <span>Mensajes</span>
         </a>
       </li>
 
       <li>
         <a href="#">
-          <i class="fa fa-home"></i>
+          <i class="fa fa-users"></i>
           <span>Suscriptores</span>
         </a>
       </li>
 
       <li>
         <a href="usuarios">
-          <i class="fa fa-home"></i>
+          <i class="fa fa-user-plus"></i>
           <span>Usuarios</span>
         </a>
       </li>

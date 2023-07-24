@@ -78,28 +78,14 @@
 
 include "views/modules/slide.php";
 
+include "views/modules/nosotros.php";
+
 ?>
 
 <!--//Slider-->
       <!-- //banner -->
 	  <!-- welcome -->
-<div class="welcome py-5" id="about"> 
-	<div class="container py-md-3">
-		<div class="row">
-		<div class="col-lg-6 welcome-w3lright">
-			<div class="video-grid-single-page-agileits">
-			 <img src="views/images/w1.png" alt="" class="img-responsive img-fluid" />
-			</div>
-		</div> 
-		<div class="col-lg-6 welcome_left">
-			<h3 class="agileits-title">Welcome To Our Hotel</h3>
-			<h4>Donec in nisi non ipsum luctus interdi est. Cras ipsum augue, facilisis non estut, bibendum finibus.</h4>
-			<p>Phasellus sed semper dolor, sed sodales erat. Donec at mi nunc. Suspendisse dictum lorem nec velit scelerisque, ac egestas sem tempor. Integer at facilisis enim. Vestibulum tristique consequat finibus. Donec ut elementum lorem, id dignissim neque. Curabitur commodo, odio sit amet vestibulum pretium, urna quam tincidunt elit, a tempus ex urna sit amet tortor.</p>   
-		</div>
-			</div>
-		<div class="clearfix"> </div>
-	</div> 
-</div>
+
 <!-- //welcome -->
 
 	  <!-- services -->
