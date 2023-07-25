@@ -24,7 +24,7 @@
                         
                         echo '<div class="col-md-4 col-sm-6">
                         
-                                <a href="#" data-toggle="modal" data-target="#EditarServicio">
+								<a href="#" class="EditarServicio" Sid="'.$value["id"].'" data-toggle="modal" data-target="#EditarServicio">
                                     
                                     <i class="fa fa-'.$value["icono"].'" style="font-size: 25px;"></i>
 
