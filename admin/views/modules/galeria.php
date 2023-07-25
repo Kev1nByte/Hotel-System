@@ -91,9 +91,6 @@
     <!-- /.content -->
   </div>
 
-
-
-
   <!-- Crear Slide -->
   <div class="modal fade" role="dialog" id="CrearImagen">
     
@@ -199,17 +196,17 @@
              
             <div class="form-group">
               
-              <h2>Titulo:</h2>
+              <h2>Título:</h2>
 
               <input type="text" class="form-control input-lg" id="tituloE" name="tituloE" required>
 
-              <input type="hidden" id="Sid" name="Sid">
+              <input type="hidden" id="Gid" name="Gid">
 
             </div>
 
             <div class="form-group">
               
-              <h2>Titular:</h2>
+              <h2>Subtítulo:</h2>
 
               <input type="text" class="form-control input-lg" id="subtituloE" name="subtituloE" required>
 
@@ -262,14 +259,16 @@
 
           <?php
 
+          $actualizarGaleria = new GaleriaControlador();
+          $actualizarGaleria -> ActualizarGaleriaControlador();
 
           ?>
 
-      </form>
+        </form>
+
+      </div>
 
     </div>
-
-  </div>
 
 </div>
 
