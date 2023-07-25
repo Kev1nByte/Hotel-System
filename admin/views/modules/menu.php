@@ -33,7 +33,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="galeria">
           <i class="fa  fa-file-photo-o "></i>
           <span>Galería</span>
         </a>
