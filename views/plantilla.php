@@ -80,6 +80,8 @@ include "views/modules/slide.php";
 
 include "views/modules/nosotros.php";
 
+include "views/modules/servicios.php";
+
 ?>
 
 <!--//Slider-->
@@ -89,85 +91,9 @@ include "views/modules/nosotros.php";
 <!-- //welcome -->
 
 	  <!-- services -->
-	<div class="services py-5" id="services">
-		<div class="container py-md-3">
-		<div class="w3-head-all mb-3 w3-head-col">
-		         <h3>Our Services</h3>
-		       </div>
-			<div class="row w3-services-grids mt-md-5 mt-0">
-
-				<div class="col-md-4 w3l-services-grid mb-5">
-					<div class="w3ls-services-img">
-						<i class="fa fa-home"></i>
-					</div>
-					<div class="agileits-services-info">
-						<h4 class="my-sm-3 my-2">Largest Hotel</h4>
-						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue
-							lacus lorem a elit. </p>
-					</div>
-				</div>
-
-				<div class="col-md-4 w3l-services-grid mb-5">
-					<div class="w3ls-services-img">
-						<i class="fas fa-home"></i>
-					</div>
-					<div class="agileits-services-info">
-						<h4 class="my-sm-3 my-2">Largest Hotel</h4>
-						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue
-							lacus lorem a elit. </p>
-					</div>
-				</div>
-
-				<div class="col-md-4 w3l-services-grid mb-5">
-					<div class="w3ls-services-img">
-						<i class="fas fa-home"></i>
-					</div>
-					<div class="agileits-services-info">
-						<h4 class="my-sm-3 my-2">Largest Hotel</h4>
-						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue
-							lacus lorem a elit. </p>
-					</div>
-				</div>
-
-				<div class="col-md-4 w3l-services-grid mb-5">
-					<div class="w3ls-services-img">
-						<i class="fas fa-home"></i>
-					</div>
-					<div class="agileits-services-info">
-						<h4 class="my-sm-3 my-2">Largest Hotel</h4>
-						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue
-							lacus lorem a elit. </p>
-					</div>
-				</div>
-
-				<div class="col-md-4 w3l-services-grid mb-5">
-					<div class="w3ls-services-img">
-						<i class="fas fa-home"></i>
-					</div>
-					<div class="agileits-services-info">
-						<h4 class="my-sm-3 my-2">Largest Hotel</h4>
-						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue
-							lacus lorem a elit. </p>
-					</div>
-				</div>
-
-				<div class="col-md-4 w3l-services-grid mb-5">
-					<div class="w3ls-services-img">
-						<i class="fas fa-home"></i>
-					</div>
-					<div class="agileits-services-info">
-						<h4 class="my-sm-3 my-2">Largest Hotel</h4>
-						<p>Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue
-							lacus lorem a elit. </p>
-					</div>
-				</div>
 
 
-
-				
-			</div>
-		</div>
-	</div>
+	
 	<!-- //services -->
 
 	  	<!--/Gallry-->
