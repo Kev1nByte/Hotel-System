@@ -102,6 +102,13 @@
 
 				</div>
 
+				<?php
+
+				$actualizarServicio = new ServiciosControlador();
+				$actualizarServicio -> actualizarServiciosControlador();
+
+				?>
+
 			</form>
 
 		</div>
