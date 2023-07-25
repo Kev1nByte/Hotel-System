@@ -72,6 +72,41 @@ class GaleriaControlador{
 
 	}
 
+	//Borrar Galería
+
+	public function BorrarGaleriaControlador(){
+
+		if(isset($_GET["Gid"])){
+
+			$tablaBD = "galeria";
+			$id = $_GET["Gid"];
+
+			if($_GET["Gimagen"] != ""){
+
+				unlink($_GET["Gimagen"]);
+
+			}
+
+			$respuesta = GaleriaModelo::BorrarGaleriaModelo($tablaBD, $id);
+
+			if($respuesta == true){
+
+				echo '<script>
+
+					window.location = "galeria";
+
+				</script>';
+
+			}else{
+
+				echo 'ERROR AL BORRAR IMAGEN';
+
+			}
+
+		}
+
+	}
+
 } 
 
 ?>

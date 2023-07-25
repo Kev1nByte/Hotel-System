@@ -174,13 +174,13 @@
 
           ?>
 
-        </form>
-
-      </div>
+      </form>
 
     </div>
 
   </div>
+
+</div>
 
 
 <div class="modal fade" role="dialog" id="EditarGaleria">
@@ -265,16 +265,17 @@
 
           ?>
 
-        </form>
-
-      </div>
+      </form>
 
     </div>
 
   </div>
 
+</div>
 
-  <?php
+<?php
 
+$borrarGaleria = new GaleriaControlador();
+$borrarGaleria -> BorrarGaleriaControlador();
 
-  ?>
+?>

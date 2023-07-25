@@ -128,6 +128,7 @@
 <script src="views/js/usuarios.js"></script>
 <script src="views/js/slide.js"></script>
 <script src="views/js/servicios.js"></script>
+<script src="views/js/galeria.js"></script>
 
 </body>
 </html>
