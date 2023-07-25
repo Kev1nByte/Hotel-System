@@ -156,6 +156,8 @@
 
           <?php
 
+          $crearGaleria = new GaleriaControlador();
+          $crearGaleria -> CrearGaleriaControlador();
 
           ?>
 
@@ -184,7 +186,7 @@
              
             <div class="form-group">
               
-              <h2>Titular:</h2>
+              <h2>Titulo:</h2>
 
               <input type="text" class="form-control input-lg" id="tituloE" name="tituloE" required>
 
