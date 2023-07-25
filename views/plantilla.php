@@ -82,6 +82,8 @@ include "views/modules/nosotros.php";
 
 include "views/modules/servicios.php";
 
+include "views/modules/galeria.php";
+
 ?>
 
 <!--//Slider-->
@@ -97,92 +99,7 @@ include "views/modules/servicios.php";
 	<!-- //services -->
 
 	  	<!--/Gallry-->
-	<div class="banner-bottom py-5" id="gallery">
-		<div class="container py-md-3">
-			 <div class="w3-head-all mb-3">
-		         <h3>Our Gallery</h3>
-		       </div>
-			<div class="row inner-sec">
-
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 proj_gallery_grid" data-aos="zoom-in">
-					<div class="section_1_gallery_grid">
-						<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="views/images/g1.jpg" class="img-fluid">
-							<div class="section_1_gallery_grid1">
-								<img src="views/images/g1.jpg" alt=" " class="img-fluid" />
-								<div class="proj_gallery_grid1_pos">
-									<h3>Hotel zone</h3>
-									<p>Add some text</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="section_1_gallery_grid" data-aos="zoom-in">
-						<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="views/images/g2.jpg" class="img-fluid">
-							<div class="section_1_gallery_grid1">
-								<img src="views/images/g2.jpg" alt=" " class="img-fluid" />
-								<div class="proj_gallery_grid1_pos">
-									<h3>Hotel zone</h3>
-									<p>Add some text</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 proj_gallery_grid" data-aos="zoom-in">
-					<div class="section_1_gallery_grid">
-						<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="views/images/g3.jpg" class="img-fluid">
-							<div class="section_1_gallery_grid1">
-								<img src="views/images/g3.jpg" alt=" " class="img-fluid" />
-								<div class="proj_gallery_grid1_pos">
-									<h3>Hotel zone</h3>
-									<p>Add some text</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="section_1_gallery_grid" data-aos="zoom-in">
-						<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="views/images/g4.jpg" class="img-fluid">
-							<div class="section_1_gallery_grid1">
-								<img src="views/images/g4.jpg" alt=" " class="img-fluid" />
-								<div class="proj_gallery_grid1_pos">
-									<h3>Hotel zone</h3>
-									<p>Add some text</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-				</div>
-		<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 proj_gallery_grid" data-aos="zoom-in">
-				<div class="row">
-				<div class="col-lg-12 col-md-6 col-sm-6 pr-lg-3 pr-2 section_1_gallery_grid">
-				<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="views/images/g5.jpg" class="img-fluid">
-				<div class="section_1_gallery_grid1">
-				<img src="views/images/g5.jpg" alt=" " class="img-fluid">
-				<div class="proj_gallery_grid1_pos">
-				<h3>Hotel zone</h3>
-				<p>Add some text</p>
-				</div>
-				</div>
-				</a>
-				</div>
-				<div class="col-lg-12 col-md-6 col-sm-6 pl-lg-3 pl-2 section_1_gallery_grid" data-aos="zoom-in">
-				<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="views/images/g6.jpg" class="img-fluid">
-				<div class="section_1_gallery_grid1">
-				<img src="views/images/g6.jpg" alt=" " class="img-fluid">
-				<div class="proj_gallery_grid1_pos">
-				<h3>Hotel zone</h3>
-				<p>Add some text</p>
-				</div>
-				</div>
-				</a>
-				</div>
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<!--//gallery-->
 
 	 <!-- rooms & rates -->
