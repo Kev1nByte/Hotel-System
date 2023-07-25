@@ -39,30 +39,43 @@
 
             <tbody>
 
-              <tr>
-                <td>1</td>
-                <td><img src="views/img/default.png" class="img-thumbnail" width="300px"></td>
-                <td>IN OUR HOTEL</td>
-                <td>tempor cursus lectus</td>
-                <td>Etiam vitae augue odio. Ut laoreet ipsum vel ultrices viverra. Donec nisl dolor, mollis vel libero id, tempor cursus lectus. Vestibulum eu ligula et pharetra efficitur. Maecenas eleifend.</td>
-                <td><h1>1</h1></td>
+            <?php
 
-                <td>
-                  <div class="btn-group">
+                $item = null;
+                $valor = null;
+
+                $verG = GaleriaControlador::VerGaleriaControlador($item, $valor);
+
+                foreach ($verG as $key => $value) {
                     
-                    <button class="btn btn-success" data-toggle="modal" data-target="#EditarGaleria"><i class="fa fa-pencil"></i></button>
+                    echo ' <tr>
+                            <td>'.($key+1).'</td>
 
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                            <td><img src="'.$value["imagen"].'" class="img-thumbnail" width="200px"></td>
 
-                  </div>
-                </td>
+                            <td>'.$value["titulo"].'</td>
 
-              </tr>
+                            <td>'.$value["subtitulo"].'</td>
 
-              <?php
+                            <td>'.$value["descripcion"].'</td>
 
+                            <td><h1>'.$value["orden"].'</h1></td>
 
-              ?>
+                            <td>
+                            <div class="btn-group">
+                                
+                                <button class="btn btn-success EditarGaleria" Gid="'.$value["id"].'" data-toggle="modal" data-target="#EditarGaleria"><i class="fa fa-pencil"></i></button>
+
+                                <button class="btn btn-danger BorrarGaleria" Gid="'.$value["id"].'" Gimagen="'.$value["imagen"].'"><i class="fa fa-times"></i></button>
+
+                            </div>
+                            </td>
+
+                        </tr>';
+
+                }
+
+            ?>
 
             </tbody>
 

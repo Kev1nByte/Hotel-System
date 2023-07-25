@@ -26,6 +26,34 @@ class GaleriaModelo extends ConexionBD{
 
 	}
 
+    //Ver Galería
+
+	static public function VerGaleriaModelo($tablaBD, $item, $valor){
+
+		if($item != null){
+
+			$pdo = ConexionBD::cBD()->prepare("SELECT * FROM $tablaBD WHERE $item = :$item");
+
+			$pdo -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+
+			$pdo -> execute();
+
+			return $pdo -> fetch();
+
+		}else{
+
+			$pdo = ConexionBD::cBD()->prepare("SELECT * FROM $tablaBD ORDER BY orden ASC");
+
+			$pdo -> execute();
+
+			return $pdo -> fetchAll();
+
+		}
+
+		$pdo -> close();
+
+	}
+
 }
 
 ?>

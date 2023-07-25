@@ -62,6 +62,16 @@ class GaleriaControlador{
 
 	}
 
+    //Ver Galería
+
+	static public function VerGaleriaControlador($item, $valor){
+
+		$respuesta = GaleriaModelo::VerGaleriaModelo("galeria", $item, $valor);
+
+		return $respuesta;
+
+	}
+
 } 
 
 ?>
