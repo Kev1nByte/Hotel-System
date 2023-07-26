@@ -16,6 +16,24 @@ class HSimpleModelo extends ConexionBD{
 
 	}
 
+	//Editar HS
+
+	static public function EditarHSimpleModelo($tablaBD, $id){
+
+		$pdo = ConexionBD::cBD()->prepare("SELECT id, precio, imagen, estrellas FROM $tablaBD WHERE id = :id");
+
+		$pdo -> bindParam(":id", $id, PDO::PARAM_INT);
+
+		$pdo -> execute();
+
+		return $pdo->fetch();
+
+		$pdo -> close();
+
+		$pdo = null;
+
+	}
+
 }
 
 ?>

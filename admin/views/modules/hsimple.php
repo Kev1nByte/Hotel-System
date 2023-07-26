@@ -59,53 +59,12 @@
 			
 			<form role="form" method="post" enctype="multipart/form-data">
 				
-				<div class="modal-body">
-					
-					<div class="box-body">
-						
-						<div class="form-group">
-							
-							<h3>Imagen:</h3>
+				<?php
 
-							<input type="file" name="imagenE">
+				$editarhsimple = new HSimpleControlador();
+				$editarhsimple -> EditarHSimpleControlador();
 
-							<img src="views/img/default.png" class="img-thumbnail" width="250px">
-
-							<input type="hidden" name="imagenActual">
-
-						</div>
-
-						<div class="form-group">
-							
-							<h3>Estrellas:</h3>
-
-							<select class="form-control input-lg" name="estrellasE">
-								
-								<option>2</option>
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-
-							</select> 
-
-						</div>
-
-
-						<div class="form-group">
-							
-							<h3>Precio:</h3>
-
-							<input type="text" name="precioE" class="form-control input-lg">
-
-						</div>
-
-					</div>
-
-				</div>
-
+				?>
 
 				<div class="modal-footer">
 					
