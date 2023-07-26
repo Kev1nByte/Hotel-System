@@ -10,7 +10,7 @@ class HSimpleControlador{
 
 		echo '<h3>Imagen Principal:</h3>';
 
-			if($respuesta != "" ){
+			if($respuesta ["imagen"] != "" ){
 
 				echo '<img src="'.$respuesta["imagen"].'" class="img-thumbnail" width="250px">';
 
@@ -91,15 +91,13 @@ class HSimpleControlador{
 
 						if($respuesta["imagen"] != ""){
 
-							echo '<img src="'.$respuesta["imagen"].'" class="img-thumbnail" width="250px">';
+							echo '<img src="'.$respuesta["imagen"].'" class="img-thumbnail " width="250px">';
 
 						}else{
 
 							echo '<img src="views/img/default.png" class="img-thumbnail" width="250px">';
-
+                            
 						}
-
-						
 
 						echo '<input type="hidden" name="imagenActual" value="'.$respuesta["imagen"].'">
 
@@ -137,6 +135,74 @@ class HSimpleControlador{
 				</div>
 
 			</div>';
+
+	}
+
+    //Actualizar HS
+
+	public function ActualizarHSimpleControlador(){
+
+		if(isset($_POST["precioE"])){
+
+			$rutaImg = $_POST["imagenActual"];
+
+			if(isset($_FILES["imagenE"]["tmp_name"]) && !empty($_FILES["imagenE"]["tmp_name"])){
+
+				if(!empty($_POST["imagenActual"])){
+
+					unlink($_POST["imagenActual"]);
+
+				}else{
+
+					mkdir($direc, 0755);
+
+				}
+
+
+				if($_FILES["imagenE"]["type"] == "image/jpeg"){
+
+					$nombre = mt_rand(10, 999);
+
+					$rutaImg = "views/img/hsimple/HS".$nombre.".jpg";
+
+					$imagen = imagecreatefromjpeg($_FILES["imagenE"]["tmp_name"]);
+
+					imagejpeg($imagen, $rutaImg);
+
+				}
+
+				if($_FILES["imagenE"]["type"] == "image/png"){
+
+					$nombre = mt_rand(10, 999);
+
+					$rutaImg = "views/img/hsimple/HS".$nombre.".png";
+
+					$imagen = imagecreatefrompng($_FILES["imagenE"]["tmp_name"]);
+
+					imagepng($imagen, $rutaImg);
+
+				}
+
+			}
+
+
+			$tablaBD ="hsimple";
+
+			$datosC = array("id"=>$_POST["HSid"], "imagen"=>$rutaImg, "estrellas"=>$_POST["estrellasE"], "precio"=>$_POST["precioE"]);
+
+			$respuesta = HSimpleModelo::ActualizarHSimpleModelo($tablaBD, $datosC);
+
+			if($respuesta == true){
+
+				echo '<script>
+
+				window.location = "hsimple";
+
+				</script>';
+
+			}
+
+		}
 
 	}
 

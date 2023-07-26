@@ -80,3 +80,10 @@
 	</div>
 
 </div>
+
+<?php
+	
+$actualizarHSimple = new HSimpleControlador();
+$actualizarHSimple -> ActualizarHSimpleControlador();
+
+?>
