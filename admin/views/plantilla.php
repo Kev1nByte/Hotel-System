@@ -67,7 +67,7 @@
 
         if($_GET["url"] == "inicio" || $_GET["url"] == "ingreso" || $_GET["url"] == "usuarios" || $_GET["url"] == "salir" || 
           $_GET["url"] == "perfil" || $_GET["url"] == "slide" || $_GET["url"] == "nosotros" || $_GET["url"] == "servicios" || 
-          $_GET["url"] == "galeria"){
+          $_GET["url"] == "galeria" || $_GET["url"] == "hsimple"){
 
           include "modules/".$_GET["url"].".php";
 
