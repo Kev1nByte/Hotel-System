@@ -60,21 +60,21 @@
           </li>
 
           <li>
-           <a href="#">
+           <a href="hdoble">
            <i class="fa  fa-circle-o"></i>
              <span>Doble</span>
            </a> 
           </li>
 
           <li>
-           <a href="#">
+           <a href="htriple">
            <i class="fa  fa-circle-o"></i>
              <span>Triple</span>
            </a> 
           </li>
 
           <li>
-           <a href="#">
+           <a href="hsuit">
            <i class="fa  fa-circle-o"></i>
              <span>Suit</span>
            </a> 
@@ -85,14 +85,14 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="mensajes">
           <i class="fa fa-envelope"></i>
           <span>Mensajes</span>
         </a>
       </li>
 
       <li>
-        <a href="#">
+        <a href="suscriptores">
           <i class="fa fa-users"></i>
           <span>Suscriptores</span>
         </a>
