@@ -4,7 +4,7 @@
 	
 	<section class="content-header">
 		
-		<h1>Gestor de Habitación Doble</h1>
+		<h1>Gestor de Habitación Triple</h1>
 
 	</section>
 

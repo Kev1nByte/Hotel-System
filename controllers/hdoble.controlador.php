@@ -62,9 +62,11 @@ class HDobleControlador{
 
                     <div class="price-selet">	
 
-                        <h3><span>$</span> '.$respuesta["precio"].'</h3>		
+                        <h3><span>$</span> '.$respuesta["precio"].'</h3>	
+                        
+                        <br>
 
-                        <a href="#appointment" class="scroll" >Book Now</a>
+                        <a href="#appointment" class="scroll" >Reservar Ahora</a>
 
                     </div>
 
