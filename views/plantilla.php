@@ -86,6 +86,11 @@ include "views/modules/galeria.php";
 
 include "views/modules/habitaciones.php";
 
+
+
+
+		
+
 ?>
 
 <!--//Slider-->
@@ -116,6 +121,8 @@ include "views/modules/habitaciones.php";
 		 <div class="w3-head-all mb-3 w3-head-col">
 		         <h3>Contactanos</h3>
 		       </div>
+
+			   
 			 <div class="address-below">
             <div class="contact-icons text-center row">
                <div class="col-md-4 col-sm-4 col-xs-4 footer_grid_left">
@@ -148,29 +155,14 @@ include "views/modules/habitaciones.php";
                </div>
                <div class="clearfix"> </div>
             </div>
-         </div>
-            <div class="w3layouts_mail_grid_right">
-               <form action="#" method="post">
-			   <div class="row contact-grids">
-                  <div class="col-md-6 col-xs-6 wthree_contact_left_grid">
-                     <input type="text" name="Name" placeholder="Name" required="">
-                  </div>
-                  <div class="col-md-6 col-xs-6 wthree_contact_left_grid">
-                     <input type="email" name="Email" placeholder="Email" required="">
-                  </div>
-                  <div class="col-md-6 col-xs-6 wthree_contact_left_grid">
-                     <input type="text" name="Telephone" placeholder="Telephone" required="">
-                  </div>
-                  <div class="col-md-6 col-xs-6 wthree_contact_left_grid">
-                     <input type="text" name="Subject" placeholder="Subject" required="">
-                  </div>
-                  <div class="clearfix"> </div>
-                  <textarea name="Message" placeholder="Message..." required=""></textarea>
-                  <input type="submit" value="Submit">
-                  <input type="reset" value="Clear">
-                </div>
-				 </form>
-            </div>
+        </div>
+
+		<?php
+
+		 	include "views/modules/mensajes.php";
+			
+		?>
+			
          </div>
       </div>
       
