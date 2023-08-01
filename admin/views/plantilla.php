@@ -130,6 +130,7 @@
 <script src="views/js/slide.js"></script>
 <script src="views/js/servicios.js"></script>
 <script src="views/js/galeria.js"></script>
+<script src="views/js/mensajes.js"></script>
 
 </body>
 </html>

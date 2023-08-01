@@ -52,8 +52,8 @@
 								</div>
 
 								<div class="box-footer">
-									
-									<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ResponderM">Responder</button>
+								
+									<button type="button" class="btn btn-primary btn-lg ResponderM" data-toggle="modal" data-target="#ResponderM" Mid="'.$value["id"].'">Responder</button>
 
 								</div>
 
@@ -136,6 +136,13 @@
 				</div>
 
 			</form>
+
+			<?php
+
+				$enviarModelo = new MensajesControlador();
+				$enviarModelo -> RespuestaMensajeControlador();
+
+			?>
 
 		</div>
 
