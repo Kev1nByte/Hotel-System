@@ -31,7 +31,7 @@
 										
 										<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"><i class="fa fa-minus"></i></button>
 
-										<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"><i class="fa fa-times"></i></button>
+										<a href="index.php?url=mensajes&Mid='.$value["id"].'"><button type="button" class="btn btn-box-tool"><i class="fa fa-times"></i></button></a>
 
 									</div>
 
@@ -64,6 +64,9 @@
 					</div>';
 
 			}
+
+			$eliminarMensaje = new MensajesControlador();
+			$eliminarMensaje -> EliminarMensajesControlador();
 
 		?>		
 

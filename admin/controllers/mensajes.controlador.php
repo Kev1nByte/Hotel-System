@@ -13,6 +13,32 @@ class MensajesControlador{
 
 	}
 
+	//Eliminar Mensajes
+
+	public function EliminarMensajesControlador(){
+
+		if(isset($_GET["Mid"])){
+
+			$tablaBD = "mensajes";
+
+			$id = $_GET["Mid"];
+
+			$respuesta = MensajesModelo::EliminarMensajesModelo($tablaBD, $id);
+
+			if($respuesta == true){
+
+				echo '<script>
+
+					window.location = "mensajes";
+
+				</script>';
+
+			}
+
+		}
+
+	}
+
 }
 
 ?>
