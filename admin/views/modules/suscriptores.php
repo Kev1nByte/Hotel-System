@@ -121,6 +121,13 @@
 
 			</form>
 
+			<?php
+
+				$mensajeSuscriptores = new SuscriptoresControlador();
+				$mensajeSuscriptores -> MensajesSuscriptoresControlador();
+
+			?>
+
 		</div>
 
 	</div>

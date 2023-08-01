@@ -52,6 +52,21 @@ class SuscriptoresModelo extends ConexionBD{
 
 	}
 
+	//Enviar mensajes a los suscriptores
+
+	static public function MensajesSuscriptoresModelo($tablaBD){
+
+		$pdo = ConexionBD::cBD()->prepare("SELECT email FROM $tablaBD");
+
+		$pdo -> execute();
+
+		return $pdo -> fetchAll();
+
+		$pdo -> close();
+		$pdo = null;
+
+	}
+
 }
 
 ?>
