@@ -12,7 +12,6 @@ require_once "controllers/hdoble.controlador.php";
 require_once "controllers/htriple.controlador.php";
 require_once "controllers/hsuit.controlador.php";
 require_once "controllers/mensajes.controlador.php";
-
 require_once "models/usuarios.modelo.php";
 require_once "models/slide.modelo.php";
 require_once "models/nosotros.modelo.php";
