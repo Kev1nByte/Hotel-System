@@ -49,7 +49,7 @@
 
 									<td>
 
-										<a href=""><button class="btn btn-danger"><i class="fa fa-times"></i></button></a>
+										<a href="index.php?url=suscriptores&Sid='.$value["id"].'"><button class="btn btn-danger"><i class="fa fa-times"></i></button></a>
 
 									</td>
 
@@ -57,10 +57,11 @@
 
 						}
 
+						$eliminarS = new SuscriptoresControlador();
+						$eliminarS -> EliminarSuscriptoresControlador();
+
 						?>
 						
-						
-
 					</tbody>
 
 				</table>
