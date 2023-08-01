@@ -7,52 +7,65 @@
 	</section>
 
 	<section class="content">
-		
-		<div class="row MEN">
-			
-			<div class="col-md-12">
-					
-				<div class="box box-primary">
-					
-					<div class="box-header with-border">
+
+		<?php
+
+			$item = null;
+			$valor = null;
+
+			$mensajes = MensajesControlador::MostrarMensajesControlador($item, $valor);
+
+			foreach ($mensajes as $key => $value) {
+				
+				echo '<div class="row MEN">
 						
-						<h2>Asunto: Reserva</h2>
+						<div class="col-md-12">
+								
+							<div class="box box-primary">
+								
+								<div class="box-header with-border">
+									
+									<h2>Asunto: '.$value["asunto"].'</h2>
 
-						<div class="box-tools pull-right">
-							
-							<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"><i class="fa fa-minus"></i></button>
+									<div class="box-tools pull-right">
+										
+										<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"><i class="fa fa-minus"></i></button>
 
-							<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"><i class="fa fa-times"></i></button>
+										<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"><i class="fa fa-times"></i></button>
+
+									</div>
+
+								</div>
+
+								<div class="box-body">
+									
+									<p>'.$value["fecha"].'</p>
+
+									<h3>Nombre: '.$value["nombre"].'</h3>
+
+									<h5>Email: '.$value["email"].'</h5>
+
+									<h5>Teléfono: '.$value["telefono"].'</h5>
+
+									<h4>'.$value["mensaje"].'</h4>
+
+								</div>
+
+								<div class="box-footer">
+									
+									<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ResponderM">Responder</button>
+
+								</div>
+
+							</div>
 
 						</div>
 
-					</div>
+					</div>';
 
-					<div class="box-body">
-						
-						<p>2019/05/20</p>
+			}
 
-						<h3>Nombre: Alejandro</h3>
-
-						<h5>Email: ale@gmail.com</h5>
-
-						<h5>Teléfono: 15545888</h5>
-
-						<h4>Mensaje.........</h4>
-
-					</div>
-
-					<div class="box-footer">
-						
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ResponderM">Responder</button>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
+		?>		
 
 	</section>
 
