@@ -31,19 +31,35 @@
 					</thead>
 
 					<tbody>
-						
-						<tr>
+
+						<?php
+
+						$item = null;
+						$valor = null;
+
+						$suscriptores = SuscriptoresControlador::MostrarSuscriptoresControlador($item, $valor);
+
+						foreach ($suscriptores as $key => $value) {
 							
-							<td>1</td>
-							<td>ale@gmail.com</td>
+							echo '<tr>
+							
+									<td>'.($key+1).'</td>
 
-							<td>
+									<td>'.$value["email"].'</td>
 
-								<a href=""><button class="btn btn-danger"><i class="fa fa-times"></i></button></a>
+									<td>
 
-							</td>
+										<a href=""><button class="btn btn-danger"><i class="fa fa-times"></i></button></a>
 
-						</tr>
+									</td>
+
+								</tr>';
+
+						}
+
+						?>
+						
+						
 
 					</tbody>
 

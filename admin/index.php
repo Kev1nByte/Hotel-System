@@ -12,6 +12,8 @@ require_once "controllers/hdoble.controlador.php";
 require_once "controllers/htriple.controlador.php";
 require_once "controllers/hsuit.controlador.php";
 require_once "controllers/mensajes.controlador.php";
+require_once "controllers/suscriptores.controlador.php";
+
 require_once "models/usuarios.modelo.php";
 require_once "models/slide.modelo.php";
 require_once "models/nosotros.modelo.php";
@@ -22,6 +24,7 @@ require_once "models/hdoble.modelo.php";
 require_once "models/htriple.modelo.php";
 require_once "models/hsuit.modelo.php";
 require_once "models/mensajes.modelo.php";
+require_once "models/suscriptores.modelo.php";
 
 $plantilla = new PlantillaControlador();
 $plantilla -> llamarPlantilla();
